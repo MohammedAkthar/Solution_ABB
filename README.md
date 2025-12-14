@@ -4,7 +4,7 @@ This repository contains an end-to-end machine learning pipeline to predict **It
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 The objective of this project is to build a robust regression model that predicts product sales across different outlets. The pipeline is designed to:
 
@@ -17,7 +17,7 @@ The final output is a CSV file with predicted sales values.
 
 ---
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 .
@@ -26,13 +26,13 @@ The final output is a CSV file with predicted sales values.
 ├── train_processed.csv
 ├── test_processed.csv
 ├── big-mart-submission.csv
-├── main.py
+├── predict_bigmart_sales.py
 └── README.md
 ```
 
 ---
 
-## ⚙️ Key Components
+## Key Components
 
 ### 1. DataPreparation Class
 
@@ -82,7 +82,7 @@ The main pipeline performs the following steps:
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 The following metrics are used to evaluate model performance:
 
@@ -95,13 +95,13 @@ Metrics are reported for both training and test sets.
 
 ---
 
-## 📈 Feature Importance
+## Feature Importance
 
 For tree-based models, feature importance plots are generated and saved as PNG files to help interpret model behavior.
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 1. Install dependencies:
 
@@ -114,7 +114,7 @@ pip install pandas numpy scikit-learn xgboost matplotlib
 3. Run the script:
 
 ```bash
-python main.py
+python predict_bigmart_sales.py
 ```
 
 4. Output files generated:
@@ -125,22 +125,3 @@ python main.py
 * Feature importance plots
 
 ---
-
-## 📝 Notes
-
-* Negative sales predictions are clipped to zero.
-* The pipeline is modular and easy to extend.
-* Hyperparameter tuning can be enabled or disabled as needed.
-
----
-
-## ✅ Future Improvements
-
-* Add cross-validation reporting
-* Integrate MLflow for experiment tracking
-* Add model comparison summary
-* Deploy as an API
-
----
-
-Feel free to fork this repository and adapt the pipeline for similar regression problems.
